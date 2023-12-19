@@ -10,6 +10,7 @@ M.treesitter = {
     "typescript",
     "tsx",
     "c",
+    "rust",
     "markdown",
     "markdown_inline",
   },
@@ -22,6 +23,7 @@ M.treesitter = {
 }
 
 M.mason = {
+  install_root_dir = os.getenv "HOME" .. "/.local/share/nvim/mason/bin",
   ensure_installed = {
     -- lua stuff
     "lua-language-server",
@@ -37,6 +39,18 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- Rust stuff
+    "rust-analyzer",
+
+    -- Shell stuff
+    "shellcheck",
+    "shfmt",
+
+    -- Python
+    -- TODO: Remove mason-dap-install plugin and use the default
+    "black",
+    "debugpy",
   },
 }
 
