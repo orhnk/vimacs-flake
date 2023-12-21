@@ -1,5 +1,5 @@
 {
-  description = "IogaMaster's Neovim Configuration";
+  description = "Vimacs - The featureful neovim distribution";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
